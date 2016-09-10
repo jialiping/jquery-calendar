@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JQuery Calendar</title>
+
+  <meta name="description" content="Calendar For JQuery.">
+  <meta name="keywords" content="jQuery,Bootstrap,Calendar">
+  <meta name="author" content="xinshuaifeng">
+  <meta charset="UTF-8">
+
+
+  <link rel="stylesheet" href="./components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="./dist/css/jquery-calendar.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="hero-unit">
+    <h1>JQuery Calendar Demo</h1>
+
+    <p>Bootstrap based full view calendar. Template based.</p>
+
+    <a class="btn btn-inverse" href="https://github.com/cwheart/jquery-calendar">Fork on GitHub</a>
+    <a class="btn" href="index-bs3.html">Use bootstrap 3</a>
+  </div>
+
+  <div class="page-header">
+  </div>
+
+  <div id="calendar" class="calendar row">
+    <div class="calendar-body col-md-8">
+      <div class="calendar-title"></div>
+      <div class="calendar-list"></div>
+    </div>
+    <div class="calendar-nav col-md-4"></div>
+  </div>
+
+  <div class="clearfix"></div>
+  <br><br>
+  <a href="https://github.com/cwheart/jquery-calendar/issues" class="btn btn-block btn-info">
+    <center>
+      <span class="lead">
+        Submit an issue, ask questions or give your ideas here!<br>
+      </span>
+      <small>Please do not post your "How to ..." questions in comments. use GitHub issue tracker.</small>
+    </center>
+  </a>
+  <br><br>
+
+  <div id="disqus_thread"></div>
+
+  <div class="modal hide fade" id="events-modal">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>Event</h3>
+    </div>
+    <div class="modal-body" style="height: 400px">
+    </div>
+    <div class="modal-footer">
+      <a href="#" data-dismiss="modal" class="btn">Close</a>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="./dist/js/jquery-calendar.min.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+      $("#calendar").calendar();
+    });
+  </script>
+</div>
+</body>
+</html>
